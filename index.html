@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Minha Página</title>
+  <style>
+    body {
+      background-color: #f0f8ff; 
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    h1 {
+      color: #5a189a; 
+      text-align: center;
+    }
+
+    p {
+      font-size: 18px;
+      text-align: justify;
+    }
+
+    ul {
+      line-height: 2;
+    }
+
+    img {
+      width: 400px;
+      border-radius: 25px;
+      display: block;
+      margin: 20px 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    table, th, td {
+      border: 1px solid #999;
+    }
+
+    td {
+      text-align: center;
+      padding: 10px;
+    }
+
+    a {
+      color: #1d3557;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #e63946; 
+    }
+
+    #mensagem {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #2a9d8f;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Paula Brito</h1>
+
+  <p>
+    Meu nome é Paula Brito, tenho 40 anos e moro na Serra, Espírito Santo. Sou apaixonada por tecnologia, arte e tudo que envolve criatividade. Adoro aprender coisas novas, especialmente na área de desenvolvimento web.
+  </p>
+
+  <button onclick="mostrarMensagem()">Clique para ver uma mensagem!</button>
+  <div id="mensagem"></div>
+
+  <ul>
+    <li>Pintar com guache</li>
+    <li>Fazer colagens criativas</li>
+    <li>ler</li>
+  </ul>
+
+  <img src="junkjournal.webp" alt="Colagem criativa">
+
+  <table>
+    <tr>
+      <td>Japão</td>
+      <td><img src="https://flagcdn.com/w320/jp.png" width="100" alt="Bandeira do Japão"></td>
+    </tr>
+    <tr>
+      <td>Itália</td>
+      <td><img src="https://flagcdn.com/w320/it.png" width="100" alt="Bandeira da Itália"></td>
+    </tr>
+    <tr>
+      <td>Grécia</td>
+      <td><img src="https://flagcdn.com/w320/gr.png" width="100" alt="Bandeira da Grécia"></td>
+    </tr>
+  </table>
+
+  <p>
+    Acesse um site que eu gosto: <a href="https://www.ft.com/" target="_blank">Financial Times</a>
+  </p>
+
+  <script>
+    function mostrarMensagem() {
+      const divMensagem = document.getElementById("mensagem");
+      divMensagem.textContent = "Você é capaz de tudo que sonha. Nunca duvide da sua força!";
+    }
+  </script>
+
+</body>
+</html>
